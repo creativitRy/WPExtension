@@ -45,7 +45,7 @@ public class ScriptExtension
 	 *                -TODO:a layer
 	 *                tooltip is the info displayed. empty string or null will not be displayed
 	 *                min//max//step are for number values. each value can be null (blank) (when step is null or <=0, it will be 1 for int and 0.1 for float). default is null//null//null. can be inputted max, min and max, or min and max and step
-	 * @return all values in a String array where the String is formatted as "name of field==value returned"
+	 * @return all values in a String array where each String is formatted as "name of field==value returned"
 	 */
 	public static String[] form(String[] entries)
 	{
