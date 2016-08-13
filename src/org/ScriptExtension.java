@@ -34,7 +34,7 @@ public class ScriptExtension
 	 *
 	 * @param entries the array of inputs in this specific format "name of field, default value, [tooltip], [[min]//max//[step]]"
 	 *                the part in square brackets are optional
-	 *                if name of field is displayName, the default value will become the name of the input window.
+	 *                if the name of field is displayName, the default value will become the name of the input window.
 	 *                default values can be:
 	 *                -an integer
 	 *                -a float
@@ -44,7 +44,7 @@ public class ScriptExtension
 	 *                -TODO:a terrain (in this format "TERRAIN:IndexNumber")
 	 *                -TODO:a layer
 	 *                tooltip is the info displayed. empty string or null will not be displayed
-	 *                min//max//step are for number values. each value can be null (blank) (when step is null or <=0, it will be 1 for int and 0.1 for float). default is null//null//null. can be max, min and max, or min and max and step
+	 *                min//max//step are for number values. each value can be null (blank) (when step is null or <=0, it will be 1 for int and 0.1 for float). default is null//null//null. can be inputted max, min and max, or min and max and step
 	 * @return all values in a String array where the String is formatted as "name of field==value returned"
 	 */
 	public static String[] form(String[] entries)
